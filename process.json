@@ -1,0 +1,15 @@
+{
+"app": [
+    {
+        "name": "miku_server",
+        "max_memory_restart" : "300M",
+        "script"    : "/root/soft/miku_server/bin/www",
+            "instances"  : "max",
+            "exec_mode"  : "cluster",
+            "env" : {
+                "NODE_ENV" : "production",
+                "PORT" : 80
+            }
+    }
+]
+}
